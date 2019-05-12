@@ -108,4 +108,7 @@ body {
       border-radius: 50%; }
 
 .p-intro p {
-  text-align: center; }
+  text-align: center;
+  line-height: 1.8; }
+  .p-intro p + p {
+    margin-top: 25px; }
