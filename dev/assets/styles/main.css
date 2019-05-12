@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700");
+@import url("https://fonts.googleapis.com/css?family=Sawarabi+Gothic");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,7 +55,8 @@ table {
 body {
   font-size: 16px;
   color: #444;
-  font-family: "Noto Sans JP", sans-serif; }
+  font-family: "Menlo", sans-serif;
+  line-height: 1.4; }
   body img {
     max-width: 100%; }
 
@@ -69,5 +70,42 @@ body {
       width: 700px;
       margin: 0 auto; } }
 
+.c-sec {
+  padding: 80px 0; }
+  .c-sec:nth-of-type(odd) {
+    background-color: #EBEBEB; }
+  .c-sec__title {
+    font-size: 40px;
+    font-family: "Arial Black", sans-serif;
+    text-align: center;
+    margin-bottom: 40px; }
+
 .p-top {
-  color: red; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .p-top__title {
+    text-align: center;
+    margin-bottom: 38px; }
+    .p-top__title h1 {
+      font-family: "Arial Black", sans-serif;
+      font-size: 50px;
+      margin-bottom: 14px; }
+    .p-top__title p {
+      font-size: 18px; }
+  .p-top__img {
+    width: 142px;
+    margin: 0 auto; }
+    .p-top__img img {
+      border: 1px solid #C3C3C3;
+      border-radius: 50%; }
+
+.p-intro p {
+  text-align: center; }

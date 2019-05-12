@@ -10,10 +10,31 @@ html(lang="en")
   body
     .l-wrap
       .p-top
-        .l-container
-          h1 re:may
-          p Shimon Dotera`s site ver3
-          img(src="assets/images/sample.jpg", alt="")
+        .p-top__inner
+          .p-top__title
+            h1 Re:may
+            p Shimon Dotera's site ver3
+          .p-top__img
+            img(src="assets/images/my-cat.jpg", alt="")
+      .p-secWrap
+        .p-intro.c-sec
+          .l-container
+            h2.c-sec__title Intro.
+            p dorara.
+
+        .p-works.c-sec
+          .l-container
+            h2.c-sec__title Works
+
+        .p-skills.c-sec
+          .l-container
+            h2.c-sec__title Skills
+
+        .p-links.c-sec
+          .l-container
+            h2.c-sec__title Links
+
       footer
+        p made by dorara. @20190512
 
   script(src="assets/scripts/main.js")

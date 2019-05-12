@@ -1,3 +1,26 @@
 .p-top {
-  color: red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    text-align: center;
+    margin-bottom: 38px;
+    h1 {
+      font-family: $font-head;
+      font-size: 50px;
+      margin-bottom: 14px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  &__img {
+    width: 142px;
+    margin: 0 auto;
+    img {
+      border: 1px solid #C3C3C3;
+      border-radius: 50%;
+    }
+  }
 }
