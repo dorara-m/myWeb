@@ -1,0 +1,19 @@
+.p-works {
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  &__itemWrap {
+    padding: 13.5px;
+  }
+  &__item {
+    width: 144px;
+    height: 144px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

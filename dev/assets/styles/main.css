@@ -64,7 +64,7 @@ body {
   overflow: hidden; }
 
 .l-container {
-  padding: 0 20px; }
+  padding: 0 30px; }
   @media print, screen and (min-width: 768px) {
     .l-container {
       width: 700px;
@@ -112,3 +112,29 @@ body {
   line-height: 1.8; }
   .p-intro p + p {
     margin-top: 25px; }
+
+.p-works__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+.p-works__itemWrap {
+  padding: 13.5px; }
+
+.p-works__item {
+  width: 144px;
+  height: 144px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
