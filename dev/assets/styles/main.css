@@ -121,9 +121,6 @@ body {
   flex-wrap: wrap;
   margin: 0 auto; }
 
-.p-works__itemWrap {
-  padding: 13.5px; }
-
 .p-works__item {
   width: 144px;
   height: 144px;
