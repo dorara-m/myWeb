@@ -5,7 +5,8 @@
 .l-container {
   padding: 0 30px;
   @include mq(tablet) {
-    width: 700px;
+    padding: 0;
+    width: 652px;
     margin: 0 auto;
   }
 }

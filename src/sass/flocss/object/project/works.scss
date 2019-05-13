@@ -1,14 +1,23 @@
 .p-works {
-  &__grid {
+  &__flex {
+    width: 338px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin:0 -12px;
   }
   &__itemWrap {
+    padding: 12px;
+    flex-basis: 50%;
+    &:last-of-type {
+      .p-works__item::after {
+        content: '＋';
+        font-size: 40px;
+      }
+    }
   }
   &__item {
-    width: 144px;
-    height: 144px;
+    width: 145px;
+    height: 145px;
     border: 1px solid #707070;
     border-radius: 50%;
     display: flex;

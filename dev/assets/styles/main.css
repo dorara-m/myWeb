@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -67,7 +68,8 @@ body {
   padding: 0 30px; }
   @media print, screen and (min-width: 768px) {
     .l-container {
-      width: 700px;
+      padding: 0;
+      width: 652px;
       margin: 0 auto; } }
 
 .c-sec {
@@ -79,6 +81,14 @@ body {
     font-family: "Arial Black", sans-serif;
     text-align: center;
     margin-bottom: 40px; }
+
+.c-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .p-top {
   height: 100vh;
@@ -113,17 +123,26 @@ body {
   .p-intro p + p {
     margin-top: 25px; }
 
-.p-works__grid {
+.p-works__flex {
+  width: 338px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 auto; }
+  margin: 0 -12px; }
+
+.p-works__itemWrap {
+  padding: 12px;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%; }
+  .p-works__itemWrap:last-of-type .p-works__item::after {
+    content: '＋';
+    font-size: 40px; }
 
 .p-works__item {
-  width: 144px;
-  height: 144px;
+  width: 145px;
+  height: 145px;
   border: 1px solid #707070;
   border-radius: 50%;
   display: -webkit-box;
