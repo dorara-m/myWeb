@@ -4,10 +4,12 @@
     display: flex;
     flex-wrap: wrap;
     margin:0 -12px;
+    @include mq(sp320) {
+      width: 169px;
+    }
   }
   &__itemWrap {
     padding: 12px;
-    flex-basis: 50%;
     &:last-of-type {
       .p-works__item::after {
         content: '＋';
