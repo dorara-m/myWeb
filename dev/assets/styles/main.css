@@ -159,10 +159,15 @@ body {
   -ms-flex-pack: start;
   justify-content: flex-start; }
   .p-skills__flex__item {
-    padding: 10px 7.5px; }
+    padding: 10px 7.5px;
+    -ms-flex-preferred-size: 33.3%;
+    flex-basis: 33.3%; }
+    @media print, screen and (max-width: 374px) {
+      .p-skills__flex__item {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
 
 .p-skills .p-skills__item, .p-skills .p-skills__item--study {
-  width: 96px;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
