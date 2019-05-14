@@ -19,5 +19,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &--study {
+      @extend .p-skills__item;
+      background-color: #ACACAC;
+    }
   }
 }
