@@ -155,3 +155,32 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.p-skills__flex {
+  max-width: 333px;
+  margin: 0 -7.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .p-skills__flex__item {
+    padding: 10px 7.5px; }
+
+.p-skills__item {
+  background-color: #747474;
+  color: #fff;
+  width: 96px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
