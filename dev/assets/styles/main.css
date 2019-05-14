@@ -126,12 +126,11 @@ body {
   @media print, screen and (max-width: 374px) {
     .p-works__flex {
       width: 169px; } }
-
-.p-works__itemWrap {
-  padding: 12px; }
-  .p-works__itemWrap:last-of-type .p-works__item::after {
-    content: '＋';
-    font-size: 40px; }
+  .p-works__flex__item {
+    padding: 12px; }
+    .p-works__flex__item:last-of-type .p-works__item::after {
+      content: '＋';
+      font-size: 40px; }
 
 .p-works__item {
   width: 145px;

@@ -7,16 +7,18 @@
     @include mq(sp320) {
       width: 169px;
     }
-  }
-  &__itemWrap {
-    padding: 12px;
-    &:last-of-type {
-      .p-works__item::after {
-        content: '＋';
-        font-size: 40px;
+
+    &__item {
+      padding: 12px;
+      &:last-of-type {
+        .p-works__item::after {
+          content: '＋';
+          font-size: 40px;
+        }
       }
     }
   }
+  
   &__item {
     width: 145px;
     height: 145px;
