@@ -170,9 +170,7 @@ body {
   .p-skills__flex__item {
     padding: 10px 7.5px; }
 
-.p-skills__item, .p-skills__item--study {
-  background-color: #747474;
-  color: #fff;
+.p-skills .p-skills__item, .p-skills .p-skills__item--study {
   width: 96px;
   height: 30px;
   display: -webkit-box;
@@ -183,6 +181,10 @@ body {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  color: #fff; }
+
+.p-skills__item {
+  background-color: #747474; }
   .p-skills__item--study {
     background-color: #ACACAC; }
