@@ -185,6 +185,45 @@ body {
   .p-skills__item--study {
     background-color: #ACACAC; }
 
+.p-links__flex {
+  width: 262px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -20px; }
+  .p-links__flex__item {
+    -ms-flex-preferred-size: 33.3%;
+    flex-basis: 33.3%;
+    padding: 15px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.p-links__img i {
+  font-size: 40px; }
+
+.p-links__img .fa-twitter {
+  color: #1da1f2; }
+
+.p-links__img .fa-facebook {
+  color: #3b5998; }
+
+.p-links__img .fa-github {
+  color: #24292e; }
+
+.p-links__img img {
+  width: 85%;
+  margin: 0 auto;
+  display: block; }
+
 .u-center {
   display: -webkit-box;
   display: -ms-flexbox;
