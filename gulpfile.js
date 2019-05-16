@@ -75,7 +75,7 @@ gulp.task('images', () => {
 gulp.task('watch', () => {
   gulp.watch(['./src/pug/**/*.pug'], ['pug']);
   gulp.watch(['./src/sass/**/*.scss'], ['sass']);
-  gulp.watch(['./src/js/**/'], ['jsCopy']);
+  gulp.watch(['./src/js/**/*.js'], ['jsCopy']);
   gulp.watch(['./src/images/**/*.{png,jpg,gif,svg}'], ['images']);
 });
 
