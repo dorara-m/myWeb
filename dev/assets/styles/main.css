@@ -224,6 +224,10 @@ body {
   margin: 0 auto;
   display: block; }
 
+.p-footer {
+  padding: 60px 0;
+  text-align: center; }
+
 .u-center {
   display: -webkit-box;
   display: -ms-flexbox;
