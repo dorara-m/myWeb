@@ -110,8 +110,10 @@ body {
       border-radius: 50%; }
 
 .p-intro p {
+  font-family: "Sawarabi Gothic", sans-serif;
   text-align: center;
-  line-height: 1.8; }
+  line-height: 1.8;
+  letter-spacing: 0.1em; }
   .p-intro p + p {
     margin-top: 25px; }
 

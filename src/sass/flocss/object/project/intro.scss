@@ -1,7 +1,9 @@
 .p-intro {
   p {
+    font-family: $font-ja;
     text-align: center;
     line-height: 1.8;
+    letter-spacing: 0.1em;
     & + p {
       margin-top: 25px;
     }
