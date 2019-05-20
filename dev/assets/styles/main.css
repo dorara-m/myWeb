@@ -157,19 +157,16 @@ body {
 
 .p-works__bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 87%;
+  height: 87%;
   z-index: -1;
   -webkit-transition: opacity .8s;
   transition: opacity .8s; }
   .p-works__bg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     border-radius: 50%; }
   @media print, screen and (min-width: 1024px) {
     .p-works__bg {
