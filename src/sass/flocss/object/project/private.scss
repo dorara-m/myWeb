@@ -1,0 +1,37 @@
+.p-private {
+  padding: 80px 0;
+  &__title {
+    font-size: 32px;
+    font-family: $font-head;
+    span {
+      font-size: 20px;
+    }
+  }
+
+  &__sec {
+    padding-top: 40px;
+    > h2 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+
+  &__links {
+    font-family: $font-ja;
+    &__flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      &__item {
+        padding: 10px;
+        > a {
+          display: block;
+          font-size: 16px;
+          padding: 8px 13px;
+          border: 1px solid #444;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}

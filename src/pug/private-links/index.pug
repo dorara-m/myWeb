@@ -5,16 +5,25 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title private
+    link(rel="stylesheet", href="/assets/styles/main.css")
   body
     .p-private
-      h1 非公開ページ
-      p 仲良い人限定のページだお。
+      .l-container
+        h1.p-private__title 
+          |Re:may 
+          span -- private
 
-      ul.p-private__links
-        li.p-private__links__item
-          a(href="https://twitter.com/robibon2/") twitter
-        li.p-private__links__item
-          a(href="https://momijitan.hatenablog.com") 雑記ブログ
-        li.p-private__links__item
-          a(href="https://peing.net/ja/robibon2") 質問箱
+        section.p-private__sec
+          p 仲良い人限定のページだお。
+          label(for="check") プロフィール ▼
+
+        section.p-private__sec.p-private__links
+          h2 リンク集
+          ul.p-private__links__flex
+            li.p-private__links__flex__item
+              a(href="https://twitter.com/robibon2/") Twitter
+            li.p-private__links__flex__item
+              a(href="https://momijitan.hatenablog.com") 雑記ブログ
+            li.p-private__links__flex__item
+              a(href="https://peing.net/ja/robibon2") 質問箱
         
