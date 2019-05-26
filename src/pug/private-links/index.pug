@@ -12,15 +12,34 @@ html(lang="en")
         h1.p-private__title 
           |Re:may 
           span -- private
+        p.p-private__desc 
+          |もみじのホームページ。
+          br
+          |Twitter友達用の、限定公開。
 
-        section.p-private__sec
-          p 仲良い人限定のページだお。
-          label(for="check") プロフィール ▼
+      section.p-private__sec.p-private__profile
+        .l-container
           input#check(type="checkbox", name="open")
+          label#label(for="check") 
+            |プロフィール 
+            span ▼
           .text
-            p もみじ
+            p 
+              |通称もみじ。
+              br
+              |もみお。もみこ、もみたん、もみじくん、お好きにお呼びくだされ。
+            p 
+              |2019年現在、新社会人。(23)♂
+              br
+              |職業はWebの見た目を作る、フロントエンドエンジニア。(SEって呼ぶと怒る)
+            p 
+              |趣味は家でできること。
+              br
+              |コード書いたり、アニメ見たり、自炊したり、ゲームしたり、楽器弾いたり、ブログ書いたり。
+            p ポケモン/モンハン/スマブラ/スプラ/アニメ/声優/約ネバ/ヒロアカ/ボイパ/電子ドラム/ベース/アカペラ/澤野弘之/ヨルシカ/フレデリック/あいみょん/米津玄師/星野源/...
 
-        section.p-private__sec.p-private__links
+      section.p-private__sec.p-private__links
+        .l-container
           h2 リンク集
           ul.p-private__links__flex
             li.p-private__links__flex__item
