@@ -10,17 +10,51 @@
       font-family: $font-head;
       font-size: 50px;
       margin-bottom: 14px;
+      animation: slide-in-r 1.2s;
     }
     p {
+      animation: slide-in-l 1.2s;
       font-size: 18px;
     }
   }
   &__img {
     width: 142px;
     margin: 0 auto;
+    animation: spin 60s linear infinite;
     img {
       border: 1px solid #C3C3C3;
       border-radius: 50%;
     }
+  }
+}
+
+@keyframes slide-in-r {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-l {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
