@@ -278,12 +278,15 @@ body {
   line-height: 1.6;
   padding: 80px 0; }
   .p-private__title {
-    font-size: 32px;
+    font-size: 40px;
     font-family: "Arial Black", sans-serif; }
     .p-private__title span {
-      font-size: 20px; }
+      font-size: 22px; }
   .p-private__desc {
-    margin-top: 10px; }
+    margin-top: 15px; }
+    .p-private__desc > a {
+      color: #135EB5;
+      text-decoration: underline; }
   .p-private__sec {
     margin-top: 50px; }
     .p-private__sec h2 {
@@ -329,7 +332,8 @@ body {
           display: block;
           font-size: 16px;
           padding: 8px 13px;
-          border: 1px solid #444;
+          border: 1px solid #135EB5;
+          color: #135EB5;
           border-radius: 100px; }
 
 .u-center {
