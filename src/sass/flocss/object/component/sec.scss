@@ -9,5 +9,13 @@
     font-family: $font-head;
     text-align: center;
     margin-bottom: 40px;
+    opacity: 0;
+  }
+
+  &.active {
+    .c-sec__title {
+      opacity: 1;
+      animation: slide-in-r 1.2s;
+    }
   }
 }

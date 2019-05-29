@@ -13,8 +13,12 @@
       animation: slide-in-r 1.2s;
     }
     p {
-      animation: slide-in-l 1.2s;
+      opacity: 0;
       font-size: 18px;
+      &.active {
+        animation: slide-in-b 1.2s;
+        opacity: 1;
+      }
     }
   }
   &__img {

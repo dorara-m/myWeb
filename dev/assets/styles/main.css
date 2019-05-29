@@ -61,6 +61,62 @@ body {
   body img {
     max-width: 100%; }
 
+@-webkit-keyframes slide-in-r {
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slide-in-r {
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes slide-in-b {
+  0% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-b {
+  0% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 .l-wrap {
   overflow: hidden; }
 
@@ -80,7 +136,12 @@ body {
     font-size: 40px;
     font-family: "Arial Black", sans-serif;
     text-align: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    opacity: 0; }
+  .c-sec.active .c-sec__title {
+    opacity: 1;
+    -webkit-animation: slide-in-r 1.2s;
+    animation: slide-in-r 1.2s; }
 
 .p-top {
   height: 100vh;
@@ -103,9 +164,12 @@ body {
       -webkit-animation: slide-in-r 1.2s;
       animation: slide-in-r 1.2s; }
     .p-top__title p {
-      -webkit-animation: slide-in-l 1.2s;
-      animation: slide-in-l 1.2s;
+      opacity: 0;
       font-size: 18px; }
+      .p-top__title p.active {
+        -webkit-animation: slide-in-b 1.2s;
+        animation: slide-in-b 1.2s;
+        opacity: 1; }
   .p-top__img {
     width: 142px;
     margin: 0 auto;
@@ -114,62 +178,6 @@ body {
     .p-top__img img {
       border: 1px solid #C3C3C3;
       border-radius: 50%; }
-
-@-webkit-keyframes slide-in-r {
-  0% {
-    -webkit-transform: translateX(300px);
-    transform: translateX(300px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes slide-in-r {
-  0% {
-    -webkit-transform: translateX(300px);
-    transform: translateX(300px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1; } }
-
-@-webkit-keyframes slide-in-l {
-  0% {
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes slide-in-l {
-  0% {
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1; } }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
 
 .p-intro p {
   font-family: "Sawarabi Gothic", sans-serif;
