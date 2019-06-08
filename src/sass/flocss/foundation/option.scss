@@ -55,7 +55,17 @@ $bpSP: 767px;
 // css-anime
 @keyframes slide-in-r {
   0% {
-    transform: translateX(300px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-r__small {
+  0% {
+    transform: translateX(80px);
     opacity: 0;
   }
   100% {

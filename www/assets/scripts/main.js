@@ -5,7 +5,7 @@ console.log('Welcome, Re:may');
 $(function() {
   setTimeout(() => {
     $('.p-top__title p').addClass('active');
-  }, 1000);
+  }, 700);
 });
 
 // scroll in animation

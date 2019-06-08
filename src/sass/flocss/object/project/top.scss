@@ -10,7 +10,10 @@
       font-family: $font-head;
       font-size: 50px;
       margin-bottom: 14px;
-      animation: slide-in-r 1.2s;
+      animation: slide-in-r__small 1.2s;
+      @include mq(tablet) {
+        animation: slide-in-r 1.2s;
+      }
     }
     p {
       opacity: 0;
