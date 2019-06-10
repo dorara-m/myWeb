@@ -20,52 +20,28 @@ $color-link: #135EB5;
   }
   
   &__sec {
-    margin-top: 50px;
+    margin-top: 25px;
+    padding: 25px 0;
+    &:nth-child(even) {
+      background-color: #EBEBEB;      
+    }
     h2 {
-      font-size: 22px;
+      font-size: 26px;
       font-weight: bold;
     }
   }
   
   &__profile {
-    font-family: $font-ja;
-    position: relative;
-    background-color: #EBEBEB;
-    padding: 20px 0 50px;    
-    #check {
-      display: none;
-      &:checked {
-        & ~ .text {
-          display: block;
-        }
-        & + #label {
-          span {
-            display: inline-block;
-            transform: rotate(180deg);
-          }
-        }
-        
-      }
-    }
-    #label {
-      position: absolute;
-      bottom: 20px;
-      margin-top: 10px;
-      display: inline-block;
-      cursor: pointer;
-      color: $color-link;
-    }
+    padding: 20px 0 50px; 
     .text {
       > p {
         margin-bottom: 10px;
       }
       padding: 20px 0 10px;
-      display: none;
     }
   }
 
   &__links {
-    font-family: $font-ja;
     &__flex {
       display: flex;
       flex-wrap: wrap;

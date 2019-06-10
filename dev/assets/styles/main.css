@@ -365,53 +365,35 @@ body {
       color: #135EB5;
       text-decoration: underline; }
   .p-private__sec {
-    margin-top: 50px; }
+    margin-top: 25px;
+    padding: 25px 0; }
+    .p-private__sec:nth-child(even) {
+      background-color: #EBEBEB; }
     .p-private__sec h2 {
-      font-size: 22px;
+      font-size: 26px;
       font-weight: bold; }
   .p-private__profile {
-    font-family: "Sawarabi Gothic", sans-serif;
-    position: relative;
-    background-color: #EBEBEB;
     padding: 20px 0 50px; }
-    .p-private__profile #check {
-      display: none; }
-      .p-private__profile #check:checked ~ .text {
-        display: block; }
-      .p-private__profile #check:checked + #label span {
-        display: inline-block;
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); }
-    .p-private__profile #label {
-      position: absolute;
-      bottom: 20px;
-      margin-top: 10px;
-      display: inline-block;
-      cursor: pointer;
-      color: #135EB5; }
     .p-private__profile .text {
-      padding: 20px 0 10px;
-      display: none; }
+      padding: 20px 0 10px; }
       .p-private__profile .text > p {
         margin-bottom: 10px; }
-  .p-private__links {
-    font-family: "Sawarabi Gothic", sans-serif; }
-    .p-private__links__flex {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin: 0 -10px; }
-      .p-private__links__flex__item {
-        padding: 10px; }
-        .p-private__links__flex__item > a {
-          display: block;
-          font-size: 16px;
-          padding: 8px 13px;
-          border: 1px solid #135EB5;
-          color: #135EB5;
-          border-radius: 100px; }
+  .p-private__links__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px; }
+    .p-private__links__flex__item {
+      padding: 10px; }
+      .p-private__links__flex__item > a {
+        display: block;
+        font-size: 16px;
+        padding: 8px 13px;
+        border: 1px solid #135EB5;
+        color: #135EB5;
+        border-radius: 100px; }
 
 .u-center {
   display: -webkit-box;
