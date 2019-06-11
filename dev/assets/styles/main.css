@@ -153,7 +153,7 @@ body {
   .c-sec:nth-of-type(odd) {
     background-color: #EBEBEB; }
   .c-sec__title {
-    font-size: 40px;
+    font-size: 36px;
     font-family: "Archivo Black", sans-serif;
     text-align: center;
     margin-bottom: 40px;
@@ -183,7 +183,7 @@ body {
     margin-bottom: 38px; }
     .p-top__title h1 {
       font-family: "Archivo Black", sans-serif;
-      font-size: 50px;
+      font-size: 42px;
       margin-bottom: 14px;
       -webkit-animation: slide-in-r__small 1.2s;
       animation: slide-in-r__small 1.2s; }
