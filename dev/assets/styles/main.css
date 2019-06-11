@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Sawarabi+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -153,7 +154,7 @@ body {
     background-color: #EBEBEB; }
   .c-sec__title {
     font-size: 40px;
-    font-family: "Arial Black", sans-serif;
+    font-family: "Archivo Black", sans-serif;
     text-align: center;
     margin-bottom: 40px;
     opacity: 0; }
@@ -181,7 +182,7 @@ body {
     text-align: center;
     margin-bottom: 38px; }
     .p-top__title h1 {
-      font-family: "Arial Black", sans-serif;
+      font-family: "Archivo Black", sans-serif;
       font-size: 50px;
       margin-bottom: 14px;
       -webkit-animation: slide-in-r__small 1.2s;
@@ -356,7 +357,7 @@ body {
   padding: 80px 0; }
   .p-private__title {
     font-size: 40px;
-    font-family: "Arial Black", sans-serif; }
+    font-family: "Archivo Black", sans-serif; }
     .p-private__title span {
       font-size: 22px; }
   .p-private__desc {
@@ -370,7 +371,7 @@ body {
     .p-private__sec:nth-child(even) {
       background-color: #EBEBEB; }
     .p-private__sec h2 {
-      font-size: 26px;
+      font-size: 22px;
       font-weight: bold; }
   .p-private__profile {
     padding: 20px 0 50px; }
