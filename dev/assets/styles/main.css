@@ -207,12 +207,12 @@ body {
       border: 1px solid #C3C3C3;
       border-radius: 50%; }
 
-.p-intro p {
+.p-about p {
   font-family: "Sawarabi Gothic", sans-serif;
   text-align: center;
   line-height: 1.8;
   letter-spacing: 0.05em; }
-  .p-intro p + p {
+  .p-about p + p {
     margin-top: 25px; }
 
 .p-works__flex {

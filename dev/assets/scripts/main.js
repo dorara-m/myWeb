@@ -13,7 +13,7 @@ var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({triggerElement: ".p-intro"})
   .on("enter", function (event) {
-    $('.p-intro').addClass('active');
+    $('.p-about').addClass('active');
   })
   .addTo(controller);
 new ScrollMagic.Scene({triggerElement: ".p-works"})
