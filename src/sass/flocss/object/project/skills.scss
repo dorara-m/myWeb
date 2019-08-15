@@ -1,13 +1,12 @@
 .p-skills {
 
-  &__flex {
+  ul {
     max-width: 333px;
     margin: 0 -7.5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-
-    &__item {
+    > li {
       padding: 10px 7.5px; 
       flex-basis: 33.3%;
       @include mq(sp320) {
@@ -18,16 +17,17 @@
 
 
   %__item {
-    height: 30px;
+    min-height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    text-align: center;
   }
   &__item {
     @extend %__item;
     background-color: #747474;
-    &--study {
+    &-study {
       @extend %__item;
       background-color: #ACACAC;
     }

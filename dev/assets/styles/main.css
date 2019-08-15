@@ -271,7 +271,7 @@ body {
     .p-works__bg {
       opacity: 0; } }
 
-.p-skills__flex {
+.p-skills ul {
   max-width: 333px;
   margin: 0 -7.5px;
   display: -webkit-box;
@@ -282,17 +282,17 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
-  .p-skills__flex__item {
+  .p-skills ul > li {
     padding: 10px 7.5px;
     -ms-flex-preferred-size: 33.3%;
     flex-basis: 33.3%; }
     @media print, screen and (max-width: 374px) {
-      .p-skills__flex__item {
+      .p-skills ul > li {
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%; } }
 
-.p-skills .p-skills__item, .p-skills .p-skills__item--study {
-  height: 30px;
+.p-skills .p-skills__item, .p-skills .p-skills__item-study {
+  min-height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,11 +302,12 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 .p-skills__item {
   background-color: #747474; }
-  .p-skills__item--study {
+  .p-skills__item-study {
     background-color: #ACACAC; }
 
 .p-links__flex {
