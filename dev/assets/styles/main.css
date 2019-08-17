@@ -181,6 +181,9 @@ body {
   .p-top__title {
     text-align: center;
     margin-bottom: 38px; }
+    @media print, screen and (min-width: 768px) {
+      .p-top__title {
+        margin-bottom: 50px; } }
     .p-top__title h1 {
       font-family: "Archivo Black", sans-serif;
       font-size: 42px;
@@ -190,7 +193,8 @@ body {
       @media print, screen and (min-width: 768px) {
         .p-top__title h1 {
           -webkit-animation: slide-in-r 1.2s;
-          animation: slide-in-r 1.2s; } }
+          animation: slide-in-r 1.2s;
+          font-size: 62px; } }
     .p-top__title p {
       opacity: 0;
       font-size: 18px; }
@@ -203,6 +207,9 @@ body {
     margin: 0 auto;
     -webkit-animation: spin 60s linear infinite;
     animation: spin 60s linear infinite; }
+    @media print, screen and (min-width: 768px) {
+      .p-top__img {
+        width: 182px; } }
     .p-top__img img {
       border: 1px solid #C3C3C3;
       border-radius: 50%; }
