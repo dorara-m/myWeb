@@ -9,19 +9,18 @@
     font-family: $font-head;
     text-align: center;
     margin-bottom: 40px;
-    opacity: 0;
     @include mq(tablet) {
       font-size: 46px;
     }
   }
 
-  &.active {
-    .c-sec__title {
-      opacity: 1;
-      animation: slide-in-r__small 1.2s;
-      @include mq(tablet) {
-        animation: slide-in-r 1.2s;
-      }
-    }
-  }
+  // &.active {
+  //   .c-sec__title {
+  //     opacity: 1;
+  //     animation: slide-in-r__small 1.2s;
+  //     @include mq(tablet) {
+  //       animation: slide-in-r 1.2s;
+  //     }
+  //   }
+  // }
 }

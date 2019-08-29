@@ -5,14 +5,14 @@
   align-items: center;
   &__title {
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 45px;
     @include mq(tablet) {
       margin-bottom: 50px;
     }
     h1 {
       font-family: $font-head;
       font-size: 42px;
-      margin-bottom: 14px;
+      margin-bottom: 5px;
       animation: slide-in-r__small 1.2s;
       @include mq(tablet) {
         animation: slide-in-r 1.2s;
@@ -20,18 +20,17 @@
       }
     }
     p {
-      opacity: 0;
-      font-size: 18px;
-      &.active {
-        animation: slide-in-b 1.2s;
-        opacity: 1;
+      font-size: 16px;
+      animation: slide-in-b 1.2s 2s backwards;
+      @include mq(tablet) {
+        font-size: 20px;
       }
     }
   }
   &__img {
     width: 142px;
     margin: 0 auto;
-    animation: spin 60s linear infinite;
+    animation: slide-in-l 1.2s 1s backwards;
     @include mq(tablet) {
       width: 182px;
     }

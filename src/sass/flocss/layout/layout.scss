@@ -1,5 +1,55 @@
+.l-anime {
+  height: 100%;
+  width: 100%;
+  background-color: #444;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: dropBound 2s forwards linear;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: circle-big 1.5s 3s both;
+  }
+}
+
 .l-wrap {
+  display: none;
   overflow: hidden;
+  // animation: show 0s 3s both;
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 .l-container {
