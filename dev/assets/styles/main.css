@@ -378,6 +378,9 @@ body {
   text-align: center;
   line-height: 1.8;
   letter-spacing: 0.05em; }
+  .p-about p a {
+    color: #3a8bab;
+    text-decoration: underline; }
   .p-about p + p {
     margin-top: 25px; }
 
