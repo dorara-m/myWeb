@@ -1,10 +1,10 @@
 //hello
 console.log('Welcome, Re:may');
 
-setTimeout(() => {
-  $('#js-anime').hide();
-  $('#js-content').show();
-}, 4000);
+// setTimeout(() => {
+//   $('#js-anime').hide();
+//   $('#js-content').show();
+// }, 4000);
 
 // scroll in animation
 // var controller = new ScrollMagic.Controller();
