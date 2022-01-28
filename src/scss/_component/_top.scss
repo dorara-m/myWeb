@@ -1,0 +1,41 @@
+@use '../_foundation/mixin' as *;
+
+// h1 {
+//   color: var(--color-main);
+//   font-size: 3rem;
+
+//   @include mq() {
+//     font-size: 5rem;
+//   }
+// }
+
+main {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.mv {
+  height: 100vh;
+  &_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  h1 {
+    font-size: 9rem;
+    color: skyblue;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
+section {
+  padding: 8rem 0;
+  &:nth-child(even) {
+    background-color: #ddd;
+  }
+}

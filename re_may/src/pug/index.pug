@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+html(lang="en")
+  head(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Re_may | Shimon Dotera's Site
+    meta(name="robots", content="index,follow")
+    meta(name="description" content="堂寺 志門（どうてら しもん）のサイト。プロフィールや各リンクまとめ。")
+    meta(name="keywords", content="dorara, re_may, shimon dotera")
+
+    //- meta(name="twitter:card", content="summary_large_image")
+    //- meta(name="twitter:site", content="@dorara_css")
+    //- meta(property="og:url", content="https://dorara.netlify.com/")
+    //- meta(property="og:title", content="re_may")
+    //- meta(property="og:description", content="dorara's site ver3.")
+    //- meta(property="og:image", content="path/ogp.jpg")
+    //- meta(property="og:site_name", content="re_may")
+    //- meta(property="og:type", content="website")
+
+    //- link(rel="shortcut icon", href="/favicon.ico")
+    //- link(rel="apple-touch-icon-precomposed", href="/apple-touch-icon.png")
+
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous")
+    link(rel="stylesheet", href="assets/styles/main.css")
+
+    script(type='application/ld+json').
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Re_may | Shimon Dotera's Site",
+        "url": "https://dorara.netlify.app/",
+        "image": "https://dorara.netlify.app/assets/images/img-top-cat.jpg",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100021757482279",
+          "https://twitter.com/dorara_css",
+          "https://github.com/dorara-m"
+        ],
+        "jobTitle": "FrontEndDeveloper"
+      }
+  body
+    .l-wrap
+      .p-top
+        .p-top__inner
+          .p-top__title
+            h1 Re: may
+            p Shimon Dotera's site ver3
+          .p-top__img
+            img(src="assets/images/img-top-cat.jpg", alt="")
+      .p-secWrap
+        .p-about.c-sec
+          .l-container
+            h2.c-sec__title About
+            p 堂寺 志門#[br]（どうてら しもん）#[br]dorara
+            p
+              |フロントエンドエンジニア。
+              br
+              |Webの見た目を作るお仕事。
+              br
+              |社会人2年生25歳♂。
+              br
+              |ゲームとアニメと音楽と、ご飯が好き。
+              br
+              |特技はボイパ。
+            p
+              |「ぬめちゃ」というHNで
+              a(href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA", target="_blank", rel="noopener noreferrer") YouTube
+              |でゲーム実況活動もしております。
+
+
+        .p-works.c-sec
+          .l-container
+            h2.c-sec__title Works
+            .u-center
+              ul.p-works__flex
+                li.p-works__flex__item
+                    a.p-works__item(href="https://mochi-mochi-demo.firebaseapp.com")
+                    .p-works__bg
+                      img(src="/assets/images/mochi.png", alt="もち")
+                li.p-works__flex__item
+                    a.p-works__item(href="https://hello-koala.netlify.com/")
+                    .p-works__bg
+                      img(src="/assets/images/my-koala.jpg", alt="koala")
+                li.p-works__flex__item
+                    a.p-works__item(href="http://softmatter.phys.kindai.ac.jp/")
+                    .p-works__bg
+                      img(src="https://placehold.jp/80/fff7d6/c73030/200x200.jpg?text=ToD", alt="ToD")
+                li.p-works__flex__item
+                    a.p-works__item(href="http://dango64.hateblo.jp/")
+                    .p-works__bg
+                      img(src="https://placehold.jp/28/b3d3ac/3a4221/200x200.jpg?text=%E7%9F%B3%E3%81%AE%E8%A3%8F%E3%81%AE%0A%E3%83%80%E3%83%B3%E3%82%B4%E3%83%A0%E3%82%B7", alt="石の裏のダンゴムシ")
+                li.p-works__flex__item
+                    a.p-works__item(href="https://dorara-m.github.io/Janken2/")
+                    .p-works__bg
+                      img(src="https://placehold.jp/e6bae8/0b452e/200x200.jpg?text=Janken2", alt="Janken2")
+                li.p-works__flex__item
+                    a.p-works__item(href="https://dorara-m.github.io/Janken/")
+                    .p-works__bg
+                      img(src="https://placehold.jp/4ca4c7/ffffe5/200x200.jpg?text=Janken", alt="Janken")
+  
+        .p-skills.c-sec
+          .l-container
+            h2.c-sec__title Skills
+            .u-center
+              ul
+                li
+                  .p-skills__item HTML
+                li
+                  .p-skills__item CSS
+                li
+                  .p-skills__item Pug
+                li
+                  .p-skills__item SCSS
+                li
+                  .p-skills__item JS
+                li
+                  .p-skills__item jQuery
+                li
+                  .p-skills__item Vue
+                li
+                  .p-skills__item-study React
+                li
+                  .p-skills__item npm
+                li
+                  .p-skills__item gulp
+                li
+                  .p-skills__item Git
+                li
+                  .p-skills__item GitHub
+                li
+                  .p-skills__item Netlify
+                li
+                  .p-skills__item Firebase
+                li
+                  .p-skills__item-study PHP
+                li
+                  .p-skills__item-study WordPress
+                li
+                  .p-skills__item Movable#[br]Type
+                li
+                  .p-skills__item Photoshop
+                li
+                  .p-skills__item Premiere Pro
+                
+
+        .p-links.c-sec
+          .l-container
+            h2.c-sec__title Links
+            .u-center
+              ul.p-links__flex
+                li.p-links__flex__item
+                  a(href="https://twitter.com/dorara_css").p-links__img
+                    i.fab.fa-twitter
+                li.p-links__flex__item
+                  a(href="https://www.facebook.com/profile.php?id=100021757482279").p-links__img
+                    i.fab.fa-facebook
+                li.p-links__flex__item
+                  a(href="https://www.instagram.com/momiji_sd/").p-links__img
+                    img(src="assets/images/icon-insta.png", alt="")
+                li.p-links__flex__item
+                  a(href="https://github.com/dorara-m").p-links__img
+                    i.fab.fa-github
+                li.p-links__flex__item
+                  a(href="https://qiita.com/dorara").p-links__img
+                    img(src="assets/images/icon-qiita.png", alt="")
+                li.p-links__flex__item
+                  a(href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA").p-links__img
+                    img(src="assets/images/icon-youtube.png", alt="")
+
+        footer.p-footer.c-sec
+          p Made by dorara. @20190526
+          p Updated @20201208
+
+  script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  script(src="assets/scripts/main.js")
