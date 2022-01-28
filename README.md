@@ -22,6 +22,10 @@
 - node v16.13.0
 - npm v8.1.0
 
+- macOS Mojave 10.14.6
+- node v16.13.0
+- npm v8.1.0
+
 ### VS Code 拡張機能(Extensions)
 
 [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)を推奨環境としています。
