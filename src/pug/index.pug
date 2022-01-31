@@ -5,69 +5,105 @@ block css
 block js
 
 block body
+  - imgPath = "/assets/img/"
   main
     .mv
       .mv_inner
         h1 BlueThree
         p Shimon Dotera's site ver.4
 
-    section.profile
-      h2 This is me.
-      p numecha ≒ 堂寺志門（どうてらしもん）
-      p ゲーム実況者ときどきフロントエンドエンジニア。#[br]ものづくりが好き。#[br]社会人4年生が近い、26歳♂。
-      p ゲーム・アニメ・声優・音楽・ご飯がLove。#[br]ボイパできるのがちょっとした自慢。
-      p: a(href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA", target="_blank", rel="noopener noreferrer")  YouTubeみて。
+    section.section.profile
+      .section_inner
+        h2 This is me.
+        .profile_cnt
+          img(src=imgPath+"sample.png")
+          p numecha ≒ 堂寺志門（どうてらしもん）
+          p ゲーム実況者ときどきフロントエンドエンジニア。#[br]ものづくりが好き。#[br]社会人4年生が近い、26歳♂。
+          p ゲーム・アニメ・声優・音楽・ご飯がLove。#[br]ボイパできるのがちょっとした自慢。
+          p
+            a(href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA", target="_blank", rel="noopener noreferrer") YouTube
+            |がんばってる。
 
-    section.loves
-      h2 Loves
-      p だいすきなものたち。#[br]ご飯3杯はいけるね。
-      ul
-        li
-          .loves_item
-            h3 花譜さん
-            p 20220125時点。大好き。知ったきっかけは推し声優あやねるのススメ。ありがとうあやねる。消え入るような細い声質で太く歌うのが好き。泣き出す前みたいな震える声が好き。ハイテンポな曲をリズミカルに拍ぴったりに歌うリズム感がやばい。曲が好き。カンザキイオリさんすごい。
-        li
-          .loves_item
-            h3 あやねる（佐倉綾音）
-            p 最推しの女性声優。初主演アニメ「夢喰いメリー」をふと見て聞いた瞬間に一目惚れた。少年のようなハスキー感と、でも確かにある少女性のコンボ。ワイの理想の2次元女子の声そのもの。報われない幼馴染役、ツッコミ役、少年役、かなりひねくれた女性役、様々な役を経験し、結果的に「僕のヒーローアカデミア」で王道ヒロインのお茶子役になったときのワイの感動といったら。あやねるをわかっていやがる。そうそう、そういう男子と同じ目線で男友達みたいに話しかけてくれる女子、最高なんや。わかっていやがる。でも本人としては高音で苦手な役らしいけど。ラジオもちょくちょく聴いてる。「ちょろい」の頃から聴いてる。矢作パイセンとの絡み大好きやったで。そして「佐倉としたい大西」。大西さんとの凸凹最高なんや。セブンイレブンで限定はがきみたいなのプリントしちゃったわ、もう。ちなみにあやねるってニックネームつけたのは「夢喰いメリー」で主人公役だった岡本信彦さんなんやて。ヒロアカでもかっちゃんとして共演しとるし、控えめに言ってアツすぎない？？
-            a(href="http://", target="_blank", rel="noopener noreferrer") がいぶリンクアイコン
+    section.section.loves
+      .section_inner
+        h2 Loves
+        .section_disc
+          p だいすきなものたち。#[br]ご飯3杯はいけるね。
+        .section_body
+          ul
+            li
+              .loves_item
+                h3 花譜さん
+                p 20220125時点。大好き。知ったきっかけは推し声優あやねるのススメ。ありがとうあやねる。消え入るような細い声質で太く歌うのが好き。泣き出す前みたいな震える声が好き。ハイテンポな曲をリズミカルに拍ぴったりに歌うリズム感がやばい。曲が好き。カンザキイオリさんすごい。
+            li
+              .loves_item
+                h3 あやねる（佐倉綾音）
+                p 最推しの女性声優。初主演アニメ「夢喰いメリー」をふと見て聞いた瞬間に一目惚れた。少年のようなハスキー感と、でも確かにある少女性のコンボ。ワイの理想の2次元女子の声そのもの。報われない幼馴染役、ツッコミ役、少年役、かなりひねくれた女性役、様々な役を経験し、結果的に「僕のヒーローアカデミア」で王道ヒロインのお茶子役になったときのワイの感動といったら。あやねるをわかっていやがる。そうそう、そういう男子と同じ目線で男友達みたいに話しかけてくれる女子、最高なんや。わかっていやがる。でも本人としては高音で苦手な役らしいけど。ラジオもちょくちょく聴いてる。「ちょろい」の頃から聴いてる。矢作パイセンとの絡み大好きやったで。そして「佐倉としたい大西」。大西さんとの凸凹最高なんや。セブンイレブンで限定はがきみたいなのプリントしちゃったわ、もう。ちなみにあやねるってニックネームつけたのは「夢喰いメリー」で主人公役だった岡本信彦さんなんやて。ヒロアカでもかっちゃんとして共演しとるし、控えめに言ってアツすぎない？？
+              a(href="http://", target="_blank", rel="noopener noreferrer") がいぶリンクアイコン
 
-    section.skills
-      h2 Skills
-      p じまん。書いたもんがち。
-      ul
-        li HTML・CSS
-        li Pug
-        li SCSS
-        li JS
-        li jQuery
-        li Vue.js
-        li.prog React.js
-        li gulp.js
-        li Git
-        li GitHub
-        li Netlify
-        li FireBase
-        li WordPress
-        li MovableType
-        li Photoshop
-        li Premiere Pro
-        li YouTube
+    section.section.skills
+      .section_inner
+        h2 Skills
+        .section_disc
+          p じまん。書いたもんがち。
+        .section_body
+          ul
+            li
+              span HTML・CSS
+            li
+              span Pug
+            li
+              span SCSS
+            li
+              span JS
+            li
+              span jQuery
+            li
+              span Vue.js
+            li
+              span.prog React.js
+            li
+              span gulp.js
+            li
+              span Git
+            li
+              span GitHub
+            li
+              span Netlify
+            li
+              span FireBase
+            li
+              span WordPress
+            li
+              span MovableType
+            li
+              span Photoshop
+            li
+              span Premiere Pro
+            li
+              span YouTube
+            li
+              span OBS
 
-    section.works
-      h2 Works
-      p つくった＆公表しても大丈夫な子たち。
-      ul
-        li
-          a(href="http://", target="_blank", rel="noopener noreferrer")
-            h3 あにまとめ
-        li
-          a(href="http://", target="_blank", rel="noopener noreferrer")
-           h3 Hello Koala
+    section.section.works
+      .section_inner
+        h2 Works
+        .section_disc
+          p つくった＆公表してもだいじょうぶな子たち。
+        .section_body
+          ul
+            li
+              a(href="http://", target="_blank", rel="noopener noreferrer")
+                h3 あにまとめ
+            li
+              a(href="http://", target="_blank", rel="noopener noreferrer")
+              h3 Hello Koala
 
-    section.links
-      h2 Links
-      p いろいろやってる。
-      ul
-        li: a(href="http://", target="_blank", rel="noopener noreferrer")
-            img(src="", alt="twitter")
+    section.section.links
+      .section_inner
+        h2 Links
+        p いろいろやってる。
+        .section_body
+          ul
+            li: a(href="http://", target="_blank", rel="noopener noreferrer")
+                img(src="", alt="twitter")
