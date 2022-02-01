@@ -1,5 +1,6 @@
 @use '../_foundation/mixin' as *;
 
+@import url('http://fonts.cdnfonts.com/css/menlo');
 // h1 {
 //   color: var(--color-main);
 //   font-size: 3rem;
@@ -75,20 +76,21 @@ main {
 
 .skills {
   ul {
-    width: 500px;
+    font-family: 'Menlo', sans-serif;
+    width: 400px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     flex-wrap: wrap;
     li {
       list-style: none;
-      flex-basis: 25%;
+      flex-basis: 33.3%;
       padding: 7.5px;
       span {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #666;
+        background-color: #747474;
         color: #fff;
         font-size: 15px;
         height: 30px;
