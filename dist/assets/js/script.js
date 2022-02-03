@@ -16,7 +16,7 @@
   \**********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hello\": function() { return /* binding */ hello; }\n/* harmony export */ });\nfunction hello(message) {\n    console.log(message);\n}\n\n\n//# sourceURL=webpack://blue-three/./src/js/_module/_hello.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hello\": function() { return /* binding */ hello; }\n/* harmony export */ });\nfunction hello(message) {\n    console.log(message);\n}\n\n\n//# sourceURL=webpack://my-web/./src/js/_module/_hello.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_module/_hello */ \"./src/js/_module/_hello.ts\");\n\n(0,_module_hello__WEBPACK_IMPORTED_MODULE_0__.hello)('Hello World');\n\n\n//# sourceURL=webpack://blue-three/./src/js/assets/js/script.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_module/_hello */ \"./src/js/_module/_hello.ts\");\n\n(0,_module_hello__WEBPACK_IMPORTED_MODULE_0__.hello)('Hello World');\n\n\n//# sourceURL=webpack://my-web/./src/js/assets/js/script.ts?");
 
 /***/ })
 
