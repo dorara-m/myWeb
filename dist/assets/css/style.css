@@ -4,6 +4,10 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+ul, li {
+  list-style: none;
+}
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -199,34 +203,117 @@ footer {
 
 main {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 2;
   color: #444;
+  letter-spacing: 0.02em;
 }
 
 * {
   box-sizing: border-box;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .mv {
   height: 100vh;
+  position: relative;
+  line-height: 1;
 }
-.mv_inner {
+.mv h1 {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9rem;
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  background-image: linear-gradient(-90deg, #eee 0%, #eee 50%, #1600ff 51%, #a200ff 64%, #ff2465 80%, #ff9400 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-animation: h1 2.5s cubic-bezier(0.25, 1, 0.5, 1) both;
+          animation: h1 2.5s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+@-webkit-keyframes h1 {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -15%);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  45% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+@keyframes h1 {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -15%);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  45% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+.mv .border {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  bottom: 25px;
+  width: 45%;
+  height: 2px;
 }
-.mv h1 {
-  font-size: 9rem;
-  color: skyblue;
+.mv .border::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #bbb;
+  -webkit-animation: h1after 0.8s cubic-bezier(0.25, 1, 0.5, 1) both 2.5s;
+          animation: h1after 0.8s cubic-bezier(0.25, 1, 0.5, 1) both 2.5s;
+}
+@-webkit-keyframes h1after {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes h1after {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 .mv p {
   font-size: 2rem;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section {
-  padding: 10rem 0;
+  padding: 10rem 0 15rem;
 }
 .section:nth-child(even) {
   background-color: #ebebeb;
@@ -235,26 +322,95 @@ main {
   max-width: 600px;
   margin: 0 auto;
 }
-.section h2 {
+.section .section_head {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.section .section_head h2 {
   font-size: 4.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
   line-height: 1;
+  margin-bottom: 1.5rem;
 }
-.section_disc {
-  margin-bottom: 4rem;
-}
-.section_disc p {
+.section .section_head p {
   text-align: center;
-  line-height: 1.8;
+}
+
+.works ul {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px;
+}
+.works ul.leftList li:first-of-type {
+  grid-column: 3/-1;
+  grid-row: 1/3;
+}
+.works ul.rightList li:first-of-type {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+.works li a {
+  display: block;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.works li a::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+.works li a:hover::after {
+  opacity: 1;
+}
+.works li a:hover span {
+  opacity: 1;
+}
+.works li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+  width: auto;
+  height: 100%;
+}
+.works li span {
+  position: absolute;
+  width: 95%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .profile_cnt {
   text-align: center;
-  line-height: 2;
+}
+.profile_cnt img {
+  width: 200px;
+  margin-bottom: 30px;
 }
 .profile_cnt p + p {
-  margin-top: 1.5rem;
+  margin-top: 1.8em;
+}
+.profile_cnt a {
+  color: #87a7eb;
+  font-weight: bold;
+}
+.profile_cnt a:hover {
+  text-decoration: underline;
 }
 
 .skills ul {
@@ -266,7 +422,6 @@ main {
   flex-wrap: wrap;
 }
 .skills ul li {
-  list-style: none;
   flex-basis: 33.3%;
   padding: 7.5px;
 }
@@ -281,4 +436,11 @@ main {
 }
 .skills ul li span.prog {
   background-color: #999;
+}
+
+.works_list {
+  display: grid;
+}
+.works_list img {
+  max-width: 100%;
 }

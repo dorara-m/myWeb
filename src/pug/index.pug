@@ -8,21 +8,75 @@ block body
   - imgPath = "/assets/img/"
   main
     .mv
-      .mv_inner
-        h1 BlueThree
-        p ver.4
+      h1 Transition
+      .border
+      p Shimon Dotera's site ver.4
+    
+
+    section.section.works
+      .section_inner
+        .section_head
+          h2 Works
+        -
+          const works1 = [
+            {
+              href: 'https://animatome.netlify.app/',
+              image: 'https://images.microcms-assets.io/assets/fc5a67cf51fb4ac3a0eb5f358bf160d6/fb28dbf7337b456e83d631224c9fdb6e/iine.gif',
+              text: 'cssアニメがたくさん<br>「アニマトメ」'
+            },
+            {
+              href: 'https://bouken-no-syo.netlify.app/',
+              image: 'https://images.microcms-assets.io/assets/e502aee9648f4b008c0ba56f3c8de29d/dd4a09b848b24ff99d0a948c7f18486f/thumb.png',
+              text: 'ゲームのルールをまとめた<br>「ぼうけんのしょ」'
+            },
+            {
+              href: 'https://hello-koala.netlify.app/',
+              image: 'https://hello-koala.netlify.app/static/media/my-koala.4a0297a8.jpg',
+              text: 'コアラが挨拶してくれる<br>「Hello Koala!」'
+            },
+            {
+              href: 'http://softmatter.phys.kindai.ac.jp/',
+              image: 'http://softmatter.phys.kindai.ac.jp/assets/images/weblogo.png',
+              text: '父、堂寺知成の個人サイト'
+            },
+            {
+              href: 'https://dorara-m.github.io/Janken2/',
+              image: 'https://dorara-m.github.io/Janken2/images/win.jpg',
+              text: 'じゃんけん'
+            },
+          ]
+          const works2 = [
+            {
+              href: 'https://dorara-m.github.io/Janken2/',
+              image: 'https://dorara-m.github.io/Janken2/images/win.jpg',
+            },
+          ]
+        
+        ul.leftList
+          each workItem in works1
+            li
+              a(href=workItem.href, target="_blank", rel="noopener noreferrer")
+                img(src=workItem.image, alt="")
+                if workItem.text
+                  span!=workItem.text
+        //- ul.rightList
+        //-   each workItem in works2
+        //-     li
+        //-       a(href=workItem.href, target="_blank", rel="noopener noreferrer")
+        //-         img(src=workItem.image, alt="")
+          
 
     section.section.profile
       .section_inner
-        h2 This is me.
+        .section_head
+          h2 This is me.
         .profile_cnt
-          img(src=imgPath+"sample.png")
-          p numecha ≒ 堂寺志門（どうてらしもん）
-          p ゲーム実況者ときどきフロントエンドエンジニア。#[br]ものづくりが好き。#[br]社会人4年生が近い、26歳♂。
-          p ゲーム・アニメ・声優・音楽・ご飯がLove。#[br]ボイパできるのがちょっとした自慢。
+          img(src=imgPath+"me.png")
+          p ぬめちゃ ≒ 堂寺志門（どうてらしもん）
+          p ゲーム実況者、Webの表面をつくるフロントエンドエンジニア。#[br]ものづくりが好き。おしゃべりが好き。#[br]社会人4年生が近い、27歳♂。
+          p ゲーム・アニメ・声優・Vtuber・音楽・ご飯がLove。#[br]ボイパできるのがちょっとした自慢。
           p
-            a(href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA", target="_blank", rel="noopener noreferrer") YouTube
-            |がんばってる。
+            a(href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA", target="_blank", rel="noopener noreferrer") YouTubeで #おはかつ 毎朝ゲーム配信中。
 
     //- section.section.loves
     //-   .section_inner
@@ -43,73 +97,54 @@ block body
 
     section.section.skills
       .section_inner
-        h2 Skills
-        .section_disc
-          p じまん。書いたもんがち。
-        .section_body
-          ul
-            li
-              span HTML
-            li
-              span CSS
-            li
-              span Pug
-            li
-              span SCSS
-            li
-              span JS / ES6
-            li
-              span jQuery
-            li
-              span Vue.js
-            li
-              span.prog Nuxt.js
-            li
-              span.prog React.js
-            li
-              span gulp.js
-            li
-              span Git
-            li
-              span GitHub
-            li
-              span Netlify
-            li
-              span FireBase
-            li
-              span.prog WordPress
-            li
-              span MovableType
-            li
-              span MicroCMS
-            li
-              span Photoshop
-            li
-              span Premiere Pro
-            li
-              span YouTube
-            li
-              span OBS
+        .section_head
+          h2 Skills
+        ul
+          li
+            span HTML
+          li
+            span CSS
+          li
+            span Pug
+          li
+            span SCSS
+          li
+            span JS / ES6
+          li
+            span jQuery
+          li
+            span Vue.js
+          li
+            span.prog Nuxt.js
+          li
+            span.prog React
+          li
+            span.prog Next.js
+          li
+            span gulp
+          li
+            span Git
+          li
+            span GitHub
+          li
+            span Netlify
+          li
+            span FireBase
+          li
+            span.prog WordPress
+          li
+            span MovableType
+          li
+            span MicroCMS
+          li
+            span Photoshop
+          li
+            span Premiere Pro
+          li
+            span YouTube
+          li
+            span OBS
+          li
+            span.prog Studio One
 
-    section.section.works
-      .section_inner
-        h2 Works
-        .section_disc
-          p 個人でつくった子たち。（メモ：インスタっぽいレイアウト
-        .section_body
-          ul
-            li
-              a(href="https://animatome.netlify.app/", target="_blank", rel="noopener noreferrer")
-                h3 あにまとめ
-            li
-              a(href="https://hello-koala.netlify.app/", target="_blank", rel="noopener noreferrer")
-                h3 Hello Koala
-            li
-              a(href="http://softmatter.phys.kindai.ac.jp/", target="_blank", rel="noopener noreferrer")
-                h3 ToD
-            li
-              a(href="https://dango64.hateblo.jp/", target="_blank", rel="noopener noreferrer")
-                h3 石の裏のダンゴムシ様
-            li
-              a(href="https://dorara-m.github.io/Janken2/", target="_blank", rel="noopener noreferrer")
-                h3 じゃんけん
+    
