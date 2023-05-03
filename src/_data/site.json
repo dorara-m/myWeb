@@ -1,22 +1,17 @@
 {
-  "url": "https://example.com",
-  "name": "サイト名",
+  "url": "https://dorara.netlify.app/",
+  "name": "Shimon Dotera's Site",
   "viewport": "width=device-width",
-  "description": "サイトの概要",
-  "keywords": "",
+  "description": "堂寺志門（どうてらしもん）のポートフォリオ。ゲーム配信とフロントエンド開発。プロフィールと実績などをまとめています。",
   "lang": "ja",
   "locale": "ja_JP",
-  "siteImage": "/ogp.png",
+  "siteImage": "ogp.png",
   "fbAppId": "",
   "fbAdmins": "",
   "twitterCard": "summary_large_image",
   "twitterSite": "",
   "/": {
-    "name": "トップページ",
-    "description": "トップページの概要",
-    "keywords": "",
-    "ogp": "",
-    "canonical": "",
-    "alternate": ""
+    "name": "Transition | Shimon Dotera's Site",
+    "canonical": "https://dorara.netlify.app/"
   }
 }

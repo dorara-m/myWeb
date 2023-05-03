@@ -9,7 +9,6 @@ block body
   main
     .mv
       h1 Transition
-      .border
       p Shimon Dotera's site ver.4
     
 
@@ -19,6 +18,11 @@ block body
           h2 Works
         -
           const works1 = [
+            {
+              href: 'https://vite-react-oshi-matome-zprh.vercel.app/',
+              image: 'https://i.gyazo.com/3950e84ac6ecfc7379eb92e800211bcb.png',
+              text: '推しをまとめろ<br>「Oshi Matome」'
+            },
             {
               href: 'https://animatome.netlify.app/',
               image: 'https://images.microcms-assets.io/assets/fc5a67cf51fb4ac3a0eb5f358bf160d6/fb28dbf7337b456e83d631224c9fdb6e/iine.gif',
@@ -34,6 +38,8 @@ block body
               image: 'https://hello-koala.netlify.app/static/media/my-koala.4a0297a8.jpg',
               text: 'コアラが挨拶してくれる<br>「Hello Koala!」'
             },
+          ]
+          const works2 = [
             {
               href: 'http://softmatter.phys.kindai.ac.jp/',
               image: 'http://softmatter.phys.kindai.ac.jp/assets/images/weblogo.png',
@@ -45,25 +51,22 @@ block body
               text: 'じゃんけん'
             },
           ]
-          const works2 = [
-            {
-              href: 'https://dorara-m.github.io/Janken2/',
-              image: 'https://dorara-m.github.io/Janken2/images/win.jpg',
-            },
-          ]
         
-        ul.leftList
+        ul
           each workItem in works1
             li
               a(href=workItem.href, target="_blank", rel="noopener noreferrer")
                 img(src=workItem.image, alt="")
                 if workItem.text
                   span!=workItem.text
-        //- ul.rightList
-        //-   each workItem in works2
-        //-     li
-        //-       a(href=workItem.href, target="_blank", rel="noopener noreferrer")
-        //-         img(src=workItem.image, alt="")
+        //- ここをいちいち書かなくて良いように配列を自動分割したい
+        ul
+         each workItem in works2
+            li
+              a(href=workItem.href, target="_blank", rel="noopener noreferrer")
+                img(src=workItem.image, alt="")
+                if workItem.text
+                  span!=workItem.text
           
 
     section.section.profile
@@ -71,9 +74,9 @@ block body
         .section_head
           h2 This is me.
         .profile_cnt
-          img(src=imgPath+"me.png")
+          img(src=imgPath+"me.png" alt="ぬめちゃの画像")
           p ぬめちゃ ≒ 堂寺志門（どうてらしもん）
-          p ゲーム実況者、Webの表面をつくるフロントエンドエンジニア。#[br]ものづくりが好き。おしゃべりが好き。#[br]社会人4年生が近い、27歳♂。
+          p ゲーム実況者、Webを彩るフロントエンドエンジニア。#[br]ものづくりが好き。おしゃべりが好き。#[br]社会人5年生(27)♂。
           p ゲーム・アニメ・声優・Vtuber・音楽・ご飯がLove。#[br]ボイパできるのがちょっとした自慢。
           p
             a(href="https://www.youtube.com/channel/UCR5b4PoQ3ainPNFD5bk7enA", target="_blank", rel="noopener noreferrer") YouTubeで #おはかつ 毎朝ゲーム配信中。
@@ -109,7 +112,7 @@ block body
           li
             span SCSS
           li
-            span JS / ES6
+            span JS
           li
             span jQuery
           li
@@ -117,7 +120,7 @@ block body
           li
             span.prog Nuxt.js
           li
-            span.prog React
+            span React
           li
             span.prog Next.js
           li
@@ -146,5 +149,7 @@ block body
             span OBS
           li
             span.prog Studio One
+          li
+            span.prog Guitar
 
     

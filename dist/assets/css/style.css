@@ -270,44 +270,10 @@ a {
     background-position-x: 0;
   }
 }
-.mv .border {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 25px;
-  width: 45%;
-  height: 2px;
-}
-.mv .border::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #bbb;
-  -webkit-animation: h1after 0.8s cubic-bezier(0.25, 1, 0.5, 1) both 2.5s;
-          animation: h1after 0.8s cubic-bezier(0.25, 1, 0.5, 1) both 2.5s;
-}
-@-webkit-keyframes h1after {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes h1after {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 .mv p {
   font-size: 2rem;
   position: absolute;
-  top: 54%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -329,24 +295,32 @@ a {
 .section .section_head h2 {
   font-size: 4.5rem;
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .section .section_head p {
   text-align: center;
 }
 
+.works {
+  padding-bottom: 2rem;
+}
 .works ul {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 200px 200px;
+  grid-template-areas: "itemB itemA itemA" "itemC itemC itemD";
 }
-.works ul.leftList li:first-of-type {
-  grid-column: 3/-1;
-  grid-row: 1/3;
+.works ul li:first-of-type {
+  grid-area: itemA;
 }
-.works ul.rightList li:first-of-type {
-  grid-column: 1/2;
-  grid-row: 1/-1;
+.works ul li:nth-of-type(2) {
+  grid-area: itemB;
+}
+.works ul li:nth-of-type(3) {
+  grid-area: itemC;
+}
+.works ul li:nth-of-type(4) {
+  grid-area: itemD;
 }
 .works li a {
   display: block;
