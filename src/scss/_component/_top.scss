@@ -17,15 +17,23 @@ a {
 }
 
 .mv {
-  height: 100vh;
   position: relative;
   line-height: 1;
-  h1 {
+  height: 100vh;
+  @include mq() {
+  }
+  .center {
     position: absolute;
-    top: 43%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 9rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 7rem;
+    @include mq() {
+      font-size: 9rem;
+    }
     background-size: 200% 100%;
     background-position-x: 100%;
     background-image: linear-gradient(
@@ -40,6 +48,7 @@ a {
     background-clip: text;
     color: transparent;
     animation: h1 2.5s cubic-bezier(0.25, 1, 0.5, 1) both;
+
     @keyframes h1 {
       0% {
         opacity: 0;
@@ -64,11 +73,11 @@ a {
   }
 
   p {
-    font-size: 2rem;
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    @include mq() {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -79,6 +88,7 @@ a {
   }
 
   &_inner {
+    padding: 0 32px;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -97,14 +107,33 @@ a {
   }
 }
 
+.profile_cnt {
+  p {
+    text-align: left;
+    @include mq() {
+      text-align: center;
+    }
+  }
+  span {
+    font-size: 13px;
+  }
+}
+
 .works {
   // worksの不足分200px飛び出ているので
   padding-bottom: 2rem;
   ul {
+    width: 300px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
     grid-template-areas: 'itemB itemA itemA' 'itemC itemC itemD';
+    @include mq() {
+      width: 600px;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 200px 200px;
+    }
     li:first-of-type {
       grid-area: itemA;
     }
@@ -196,23 +225,64 @@ a {
     width: 400px;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
     li {
-      flex-basis: 33.3%;
-      padding: 7.5px;
       span {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #747474;
+        text-align: center;
         color: #fff;
-        font-size: 15px;
-        height: 30px;
+        height: 40px;
+        font-size: 13px;
+        line-height: 1;
+        @include mq() {
+          font-size: 15px;
+        }
         &.prog {
           background-color: #999;
         }
       }
+    }
+  }
+}
+
+.releaseNotes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  li {
+    display: grid;
+    gap: 5px 10px;
+    grid-template-columns: 80px min-content 1fr;
+    grid-template-rows: 1fr max-content;
+    grid-template-areas: 'time version no' 'text text text';
+
+    time {
+      grid-area: time;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 1;
+    }
+    .version {
+      grid-area: version;
+      line-height: 1;
+      padding: 3px 8px;
+      border-radius: 10px;
+      background-color: lightblue;
+      font-size: 12px;
+      transform: translateY(-2px);
+      &::before {
+        content: 'ver.';
+      }
+    }
+    .text {
+      grid-area: text;
+      font-size: 16px;
+      line-height: 1.5;
     }
   }
 }
