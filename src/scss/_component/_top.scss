@@ -30,7 +30,7 @@ a {
     text-align: center;
   }
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     @include mq() {
       font-size: 9rem;
     }
@@ -52,11 +52,11 @@ a {
     @keyframes h1 {
       0% {
         opacity: 0;
-        transform: translate(-50%, -15%);
+        transform: translate(-15%);
       }
       40% {
         opacity: 1;
-        transform: translate(-50%, -50%);
+        transform: translate(0);
       }
       45% {
         background-position-x: 100%;
@@ -238,7 +238,7 @@ a {
         color: #fff;
         height: 40px;
         font-size: 13px;
-        line-height: 1;
+        line-height: 1.1;
         @include mq() {
           font-size: 15px;
         }
