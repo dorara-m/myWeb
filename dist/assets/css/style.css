@@ -482,5 +482,6 @@ a {
   }
   .skills ul li span {
     font-size: 15px;
+    height: 30px;
   }
 }
